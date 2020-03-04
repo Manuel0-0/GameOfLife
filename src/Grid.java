@@ -2,6 +2,7 @@
 import java.awt.*;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
+import java.util.Random;
 
 import javax.swing.*;
 
@@ -93,6 +94,21 @@ public class Grid extends JPanel{
                     if(nbo == 3) {
                         cases[i][j].setOccupied(true);
                     }
+                }
+            }
+        }
+    }
+
+    public void setRandom(){
+        Random rand = new Random();
+        for (int i = 0; i < l; i++) {
+            for( int j = 0; j < h; j++) {
+                if(rand.nextInt(2) == 0){
+                    cases[i][j].setOccupied(false);
+
+                }else{
+                    cases[i][j].setOccupied(true);
+
                 }
             }
         }
