@@ -10,7 +10,6 @@ public class Grid extends JPanel{
     private int h;
     private Case[][] cases;
     private boolean oldCases[][];
-    //todo oldcases en attribut
 
     public Grid(int l, int h) {
         this.l = l;

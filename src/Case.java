@@ -11,7 +11,6 @@ public class Case extends JButton  implements ActionListener {
     public Case() {
         addActionListener(this);
         setBackground(Color.white);
-        //addKeyListener(this);
         setFocusable(false) ;
     }
 
